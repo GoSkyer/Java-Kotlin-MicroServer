@@ -1,8 +1,8 @@
-package org.goskyer.microserver.manager;
+package org.goskyer.microserver.bio.manager;
 
 
-import org.goskyer.microserver.MicroServer;
-import org.goskyer.microserver.listener.ConnectionListener;
+import org.goskyer.microserver.bio.MicroServer;
+import org.goskyer.microserver.bio.listener.ConnectionListener;
 
 /**
  * Created by galaxy on 2017/2/9.

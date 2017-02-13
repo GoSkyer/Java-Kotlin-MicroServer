@@ -1,10 +1,10 @@
-package org.goskyer.microserver;
+package org.goskyer.microserver.bio;
 
 
 
 
-import org.goskyer.microserver.listener.ConnectionListener;
-import org.goskyer.microserver.listener.ServerListener;
+import org.goskyer.microserver.bio.listener.ConnectionListener;
+import org.goskyer.microserver.bio.listener.ServerListener;
 
 import java.io.IOException;
 import java.net.ServerSocket;

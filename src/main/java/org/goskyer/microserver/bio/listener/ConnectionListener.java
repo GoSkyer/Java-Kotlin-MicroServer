@@ -1,7 +1,7 @@
-package org.goskyer.microserver.listener;
+package org.goskyer.microserver.bio.listener;
 
 
-import org.goskyer.microserver.MicroConnection;
+import org.goskyer.microserver.bio.MicroConnection;
 
 /**
  * Created by galaxy on 2017/1/24.

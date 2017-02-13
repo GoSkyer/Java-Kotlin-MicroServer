@@ -1,10 +1,10 @@
-package org.goskyer.microserver.manager;
+package org.goskyer.microserver.bio.manager;
 
 
-import org.goskyer.microserver.MicroConnection;
-import org.goskyer.microserver.MicroServer;
-import org.goskyer.microserver.ServerConfig;
-import org.goskyer.microserver.listener.ConnectionListener;
+import org.goskyer.microserver.bio.MicroConnection;
+import org.goskyer.microserver.bio.MicroServer;
+import org.goskyer.microserver.bio.ServerConfig;
+import org.goskyer.microserver.bio.listener.ConnectionListener;
 
 import java.util.Hashtable;
 import java.util.List;

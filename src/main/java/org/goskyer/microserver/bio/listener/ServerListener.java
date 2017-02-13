@@ -1,9 +1,9 @@
-package org.goskyer.microserver.listener;
+package org.goskyer.microserver.bio.listener;
 
 
-import org.goskyer.microserver.MicroConnection;
-import org.goskyer.microserver.ServerConfig;
-import org.goskyer.microserver.ServerState;
+import org.goskyer.microserver.bio.MicroConnection;
+import org.goskyer.microserver.bio.ServerConfig;
+import org.goskyer.microserver.bio.ServerState;
 
 public abstract class ServerListener {
 
