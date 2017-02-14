@@ -11,7 +11,7 @@ class SLog {
 
     public static void error(String s) {
         if (isDebug) {
-            System.out.println(TAG + "--" + s);
+            System.err.println(TAG + " - " + s);
         }
     }
 
