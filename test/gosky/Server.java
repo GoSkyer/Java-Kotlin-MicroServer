@@ -1,3 +1,6 @@
+package gosky;
+
+
 import org.goskyer.microserver.bio.MicroServer;
 
 /**
@@ -9,6 +12,7 @@ public class Server {
         MicroServer server = new MicroServer();
         server.initServer();
         server.startServer();
+        MicroServer serverKt = new MicroServer();
     }
 
 }

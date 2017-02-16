@@ -1,4 +1,4 @@
-package org.goskyer.microserver.bio;
+package microserver.bio;
 
 
 import java.io.IOException;
@@ -130,7 +130,7 @@ public final class MicroConnection {
 
         String data = new String(buffer, 0, length);
 
-        SLog.error("client[" + getName() + "] receive message on Port(" + mServer.getState().getPort() + ")-> " + data);
+        SLog.error("client[" + getName() + "] receive message on Port(" + mServer.getMState().getPort() + ")-> " + data);
 
         if (mServer != null) mServer.onConnectionReceive(this, buffer, length);
     }

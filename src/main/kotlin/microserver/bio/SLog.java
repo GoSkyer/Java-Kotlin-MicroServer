@@ -1,4 +1,4 @@
-package org.goskyer.microserver.bio;
+package microserver.bio;
 
 /**
  * Created by galaxy on 2017/2/9.
