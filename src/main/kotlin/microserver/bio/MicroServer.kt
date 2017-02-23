@@ -53,9 +53,9 @@ public final class MicroServer(var mConfig: ServerConfig? = ServerConfig()) {
     }
 
     private final val waitForConnectTread: Thread = Thread() {
-        while (mState != null && mState!!.isRunning() && mServer != null) {
+        while (mState != null && mState!!.isRunning && mServer != null) {
             // 连接数不能大于设定的最大值
-            if ((mState?.getConnectionTotal() as Int) < (mConfig?.connectionMaximum as Int)) {
+            if ((mState?.connectionTotal as Int) < (mConfig?.connectionMaximum as Int)) {
                 // 等待连接
                 serverAccept()
             }
@@ -76,7 +76,7 @@ public final class MicroServer(var mConfig: ServerConfig? = ServerConfig()) {
             mState = ServerState(this)
 
             // 设置服务器状态
-            mState?.setRunning(true)
+            mState?.isRunning = true
 
             SLog.error("Server initialize success...")
 
@@ -146,7 +146,7 @@ public final class MicroServer(var mConfig: ServerConfig? = ServerConfig()) {
             onError(e)
         }
 
-        mState?.setRunning(false)
+        mState?.isRunning = false
         mState?.closeAllConnection()
 
         mServer = null
@@ -189,14 +189,14 @@ public final class MicroServer(var mConfig: ServerConfig? = ServerConfig()) {
      * 获取全部客户端连接
      */
     fun getAllConnection(): Map<String, MicroConnection>? {
-        return if (mState == null) null else mState?.getAllConnection()
+        return if (mState == null) null else mState?.allConnection
     }
 
     /**
      * 获取用户列表
      */
     fun getAllConnectionName(): List<String>? {
-        return if (mState == null) null else mState?.getAllConnectionName()
+        return if (mState == null) null else mState?.allConnectionName
     }
 
     /**
