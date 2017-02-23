@@ -55,7 +55,7 @@ public final class MicroServer(var mConfig: ServerConfig? = ServerConfig()) {
     private final val waitForConnectTread: Thread = Thread() {
         while (mState != null && mState!!.isRunning() && mServer != null) {
             // 连接数不能大于设定的最大值
-            if ((mState?.getConnectionTotal() as Int) < (mConfig?.getConnectionMaximum() as Int)) {
+            if ((mState?.getConnectionTotal() as Int) < (mConfig?.connectionMaximum as Int)) {
                 // 等待连接
                 serverAccept()
             }
