@@ -30,7 +30,6 @@ class ServerState(private val mServer: MicroServer) {
     fun cutConnection(connection: MicroConnection): Int {
 
         connectionMap.remove(connection.name)
-
         return --connectionTotal
     }
 
